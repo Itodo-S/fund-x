@@ -7,6 +7,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { useAppKitAccount } from "@reown/appkit/react";
 import useContract from "../../hooks/useContract";
 import useAdminRole from "../../hooks/useAdminRole";
+import { motion } from "framer-motion";
+
 
 const XWalletHeader = () => {
   const { address: connectedWalletAddress } = useAppKitAccount();
@@ -79,7 +81,7 @@ const XWalletHeader = () => {
           className="text-2xl font-bold text-primary flex items-center"
         >
           <img src={logo} alt="FUNDX LOGO" className="w-[80px] h-[90px]" />
-          FundX
+          {/* FundX */}
         </motion.h1>
         <nav className="space-x-6 hidden md:flex">
           <NavLink
